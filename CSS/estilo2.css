@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+/* Carrossel */
+
+#banner,
+#banner .carousel-inner,
+#banner .carousel-item{
+    width:100%;
+    height:100%;
+}
+
+.banner-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Botão GitHub */
+
+.btn-github{
+    background:#fff;
+    color:#000;
+    text-decoration:none;
+    font-weight:600;
+    padding:14px 34px;
+    border-radius:10px;
+    transition:.3s;
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+}
+
+.btn-github:hover{
+    background:#000000;
+    color:#fff;
+    transform:scale(1.05);
+}
+
+/* Botões laterais */
+
+#banner .carousel-control-prev,
+#banner .carousel-control-next{
+
+    width:65px;
+    height:65px;
+
+    top:50%;
+    transform:translateY(-50%);
+
+    background:#fff;
+
+    border-radius:8px;
+
+    opacity:.25;
+
+    transition:all .3s ease;
+}
+
+#banner .carousel-control-prev{
+    left:25px;
+}
+
+#banner .carousel-control-next{
+    right:25px;
+}
+
+#banner .carousel-control-prev:hover,
+#banner .carousel-control-next:hover{
+
+    opacity:1;
+
+    transform:translateY(-50%) scale(1.08);
+
+}
+
+#banner .carousel-control-prev-icon,
+#banner .carousel-control-next-icon{
+    filter:invert(1);
+}
+
+/* Indicadores */
+
+#banner .carousel-indicators button{
+    width:13px;
+    height:13px;
+    border-radius:50%;
+}
+/* Imagem do carrossel */
+#banner .carousel-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    opacity:0.6;              /* estado padrão (apagado) */
+    transition:0.4s ease;     /* suaviza a mudança */
+}
+
+/* Hover direto no slide */
+#banner .carousel-item:hover img{
+    opacity:1;                /* fica normal ao passar o mouse */
+}
+
+/* Carrossel com altura fixa */
+#banner,
+#banner .carousel-inner,
+#banner .carousel-item{
+    height:100vh;
+}
+
+/* IMAGEM SEM VARIAR TAMANHO */
+#banner .carousel-item img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;   /* corta proporcionalmente sem distorcer */
+
+    display:block;      /* remove espaços estranhos */
+    opacity:0.6;
+    transition:0.4s ease;
+}
+
+/* hover */
+#banner .carousel-item:hover img{
+    opacity:1;
+}
+
+/* Tela cheia */
+#banner,
+#banner .carousel-inner,
+#banner .carousel-item{
+    height:100vh;
+}
+
+/* Imagem estável (sem pulo) */
+#banner .carousel-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    opacity:1;              /* normal claro */
+    transition:0.4s ease;
+}
+
+/* ao passar o mouse fica mais apagado */
+#banner .carousel-item:hover img{
+    opacity:0.4;
+}
+
+/* TÍTULO (minimalista canto superior esquerdo) */
+.title-top-left{
+    position:absolute;
+    top:25px;
+    left:35px;
+
+    color:#fff;
+    font-size:32px;
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-shadow:0 5px 20px rgba(0,0,0,0.6);
+
+    opacity:0.95;
+}
+
+/* BOTÃO GITHUB minimalista */
+.btn-github{
+    background:transparent;
+    color:#fff;
+
+    padding:12px 28px;
+    border-radius:8px;
+
+    border:2px solid #fff; /* contorno branco */
+
+    font-weight:500;
+    text-decoration:none;
+
+    transition:0.3s ease;
+}
+
+.btn-github:hover{
+    background:#fff;
+    color:#000;
+
+    transform:translateY(-2px);
+}
+
+/* CONTROLES discretos */
+#banner .carousel-control-prev,
+#banner .carousel-control-next{
+    width:60px;
+    height:60px;
+
+    top:50%;
+    transform:translateY(-50%);
+
+    background:#fff;
+    border-radius:8px;
+
+    opacity:0.25;
+
+    transition:0.3s;
+}
+
+#banner .carousel-control-prev:hover,
+#banner .carousel-control-next:hover{
+    opacity:1;
+    transform:translateY(-50%) scale(1.05);
+}
+
+#banner .carousel-control-prev{
+    left:20px;
+}
+
+#banner .carousel-control-next{
+    right:20px;
+}
+
+#banner .carousel-control-prev-icon,
+#banner .carousel-control-next-icon{
+    filter:invert(1);
+}
+
+/* Indicadores pequenos */
+#banner .carousel-indicators button{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+}
+
+.title-top-left{
+    position:absolute;
+    top:25px;
+    left:35px;
+
+    color:#fff;
+
+    font-family:"Bebas Neue", sans-serif;
+
+    font-size:44px;
+    font-weight:400;
+    letter-spacing:2px;
+
+    /* sombra leve */
+    text-shadow:0 2px 8px rgba(0,0,0,0.45);
+}
+
+body {
+  background:#111;
+}
+
+/* IMAGEM DO CARROSSEL */
+.banner-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* TÍTULO */
+.title-top-left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-shadow: 0 2px 6px rgba(0,0,0,.7);
+}
+
+/* BOTÃO GITHUB */
+.btn-github {
+  background: #00000000;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* BOTÃO ENGENHAGEM */
+.btn-tech {
+  background: transparent;
+  border: 2px solid #ffffff00;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* SVG ENGENHAGEM */
+.icon-gear {
+  width: 22px;
+  height: 22px;
+  fill: white;
+  transition: transform .6s ease;
+}
+
+.btn-tech:hover .icon-gear {
+  transform: rotate(180deg);
+}
